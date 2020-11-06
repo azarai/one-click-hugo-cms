@@ -5,7 +5,7 @@
 
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
 			yo
-			{{ $allP := where .Site.Pages "Type" "post"}}
+			{{ $allP := where .Site.RegularPages "Type" "post"}}
 			{{ range first 4 $allP }}
 				<div class="ph1-ns w-50-ns flex">
 					{{ .Render "li" }}
